@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+    alert("Vamos conversar sobre livros?");
+
+    var livrosLidos = parseInt(prompt("Número de livros lidos é: "));
+    var livrosALer = parseInt(prompt("Número de livros que você quer ler é: "));
+
+    var total = livrosALer + livrosLidos;
+    document.write("O numero total de livros é: " + total);
+    document.write("<br>");
+    if (livrosLidos < 10 && livrosLidos == 10){
+        mostra("Você não tem lido muito...Você pode melhorar!");
+    }
+    
+    if (livrosLidos > 10){
+        mostra("Você tem lido muito...Parabéns, continue assim!")
+    }
+
+</script>
+
